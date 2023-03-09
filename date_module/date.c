@@ -194,11 +194,6 @@ PRIVATE int is_valid_date(int day, int mon, int year)
            day <= NO_OF_DAYS(year, mon);
 }
 
-PRIVATE int day_of_the_week(int day, int mon, int year)
-{
-    return (day += mon < 3 ? year-- : year - 2, 23 * mon / 9 + day + 4 + year / 4- year / 100 + year / 400) % 7;
-}
-
 PRIVATE int total_days(const Date *p)
 {
     int sum = get_year_day(p);
