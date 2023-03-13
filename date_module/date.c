@@ -13,7 +13,6 @@
 
 PRIVATE Date *set(Date *p, int day, int mon, int year);
 PRIVATE int is_valid_date(int day, int mon, int year);
-PRIVATE int day_of_the_week(int day, int mon, int year);
 PRIVATE int total_days(const Date *p);
 PRIVATE Date *i_to_date(Date *p, int total_days);
 
